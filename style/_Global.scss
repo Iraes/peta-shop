@@ -1,0 +1,203 @@
+@import "Vars";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    background: $white;
+    color: $black;
+}
+
+section {
+    padding-top: 100px;
+
+    @media (max-width: 1024px) {
+        padding-top: 58px;
+    }
+
+    // @media (max-width: 1024px) {
+    //     padding-top: 39px;
+    // }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer {
+    background: $dark-gray;
+}
+
+select {
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 7px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+textarea {
+    resize: none;
+}
+
+/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
+input::-webkit-input-placeholder {
+    color: $gray;
+}
+
+/*Меняем цвет плейсхолдера в инпуте для Мозилы */
+input::-moz-placeholder {
+    color: $gray;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $gray;
+}
+
+textarea::-moz-placeholder {
+    color: $gray;
+}
+
+input:focus:not(.error),
+textarea:focus:not(.error) {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type="checkbox"] {
+    margin: auto 5px;
+    width: 14px;
+    height: 14px;
+
+    &:focus {
+        border-color: dodgerBlue;
+        box-shadow: 0 0 4px 0 dodgerBlue;
+    }
+}
+
+th[scope="col"] {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1903px;
+    // margin: 0 auto;
+    // padding-right: 15px;
+    // padding-left: 15px;
+
+    @media (max-width: 1500px) {
+    }
+
+    @media (max-width: 1200px) {
+    }
+
+    @media (max-width: 576px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.for-mobile {
+    display: none;
+}
+
+.error {
+    border-color: $error-red;
+    box-shadow: 0 0 10px 0 $error-red;
+    color: $error-red;
+}
+
+.title {
+    margin-left: 2.4px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.5px;
+
+    @media (max-width: 1024px) {
+        margin-left: 0;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 24px;
+        line-height: 25px;
+    }
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @media (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.btn--reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+}
+
+.hide {
+    display: none;
+}

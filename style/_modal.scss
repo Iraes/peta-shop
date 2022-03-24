@@ -1,0 +1,132 @@
+@import "Vars";
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &-wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 40px;
+        max-width: 592px;
+        max-height: 545px;
+        transform: translate(-50%, -50%);
+        background-color: $white;
+        border: 1px solid $white;
+        z-index: 9;
+    }
+
+    &__form {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__sub-title {
+
+        & span {
+            margin-right: 20px;
+        }
+    }
+
+    &__descr {
+        margin: 0 0 5px 0;
+    }
+
+    &-buttons {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__btn {
+
+        padding: 10px;
+        border: 1px solid $black;
+        border-radius: 5px;
+
+        &-wrapper {
+            margin-top: 25px;
+            justify-content: space-between;
+        }
+
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: transparent;
+        background-image: url('../../../work/Project/Nevis/monitoring/img/close.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.close{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $white;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.btn {
+
+    &-delete {
+        background-color: $error-red-prehover;
+        color: $white;
+        transition: background-color .3s ease-in-out;
+
+        &:hover {
+
+            background-color: $error-red;
+        }
+    }
+
+    &-save {
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $white;
+            background-color: $green-confirm;
+        }
+    }
+}

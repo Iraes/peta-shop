@@ -1,0 +1,92 @@
+@import "Vars";
+@import "Global";
+
+.content {
+    padding: 20px;
+
+    &__header {
+        // height: 100vh;
+
+        &-wrapper{
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-top: .75em;
+            padding-bottom: .75em;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+
+    &__btn {
+        display: block;
+        padding: .6em 1.25em;
+        border: 1px solid $dark;
+        border-radius: 5px;
+        color: $dark;
+        background-color: inherit;
+
+        &:hover {
+            color: $white;
+            background-color: $dark;
+        }
+    }
+
+    &__info {
+        height: 80vh;
+        overflow-y: scroll;
+    }
+}
+
+.list {
+    flex-wrap: wrap;
+}
+
+.form {
+    &__label {
+        margin-right: 10px;
+        vertical-align: center;
+        cursor: pointer;
+    }
+
+      &__checkbox{
+        margin-right: 0;
+        border: 1px solid $gray;
+        width: 14px;
+        height: 14px;
+      }
+
+      &__checkbox_label {
+        margin-right: 12px;
+      }
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__price,
+    &__country,
+    &__games,
+    &__sold {
+        display: block;
+    }
+
+    &__price {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    &__country,
+    &__games,
+    &__sold {
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}

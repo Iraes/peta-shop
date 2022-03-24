@@ -1,0 +1,98 @@
+{   
+    "Magnavox": { 
+        "magnavox Odyssey": {
+            "console": "Magnavox",
+            "release": "1972",
+            "origin": "USA",
+            "sold": "350000",
+            "games": "28",
+            "price": "650",
+            "img": "https://i.pinimg.com/564x/df/af/42/dfaf4275d430127f1361c4f81d110b49.jpg"
+        }
+    },
+    "Sega": { 
+        "megadrive": {
+            "console": "Mega drive",
+            "release": "1987",
+            "origin": "Japan",
+            "sold": "500000",
+            "games": "573",
+            "price": "350",
+            "img": "https://i.pinimg.com/564x/4f/e8/e9/4fe8e99fb1e9d9fcab0650e12d49aa12.jpg"
+        },
+        "gamegear": {
+            "console": "Game Gear",
+            "release": "1991",
+            "origin": "Japan",
+            "sold": "100000",
+            "games": "313",
+            "price": "50",
+            "img": "https://i.pinimg.com/564x/df/af/42/dfaf4275d430127f1361c4f81d110b49.jpg"
+        }
+    },
+    "Nintendo": { 
+        "color tv game 6": {
+            "console": "Color TV Game 6",
+            "release": "1977",
+            "origin": "Japan",
+            "sold": "1600000",
+            "games": "1",
+            "price": "6550",
+            "img": "https://i.pinimg.com/564x/4f/e8/e9/4fe8e99fb1e9d9fcab0650e12d49aa12.jpg"
+        },
+        "nintendo entertainment system": {
+            "console": "Nintendo entertainment system/Famicom",
+            "release": "1983",
+            "origin": "Japan",
+            "sold": "61910000",
+            "games": "717",
+            "price": "150",
+            "img": "https://i.pinimg.com/564x/c9/8b/28/c98b289dcb856c7e1482dcde8ba4987e.jpg"
+        },
+        "super nintendo entertainment system": {
+            "console": "Super Nintendo Entertainment System/Super Famicom",
+            "release": "2001",
+            "origin": "Japan",
+            "sold": "49000000",
+            "games": "1447",
+            "price": "430",
+            "img": "https://i.pinimg.com/564x/f6/71/21/f671214980a5381688635061b6e78e6e.jpg"
+        },
+        "game cube": {
+            "console": "Game Cube",
+            "release": "2001",
+            "origin": "Japan",
+            "sold": "21740000",
+            "games": "653",
+            "price": "610",
+            "img": "https://i.pinimg.com/564x/4f/e8/e9/4fe8e99fb1e9d9fcab0650e12d49aa12.jpg"
+        },
+        "virtual boy": {
+            "console": "Virtual Boy",
+            "release": "1995",
+            "origin": "Japan",
+            "sold": "770000",
+            "games": "22",
+            "price": "1550",
+            "img": "https://i.pinimg.com/564x/df/af/42/dfaf4275d430127f1361c4f81d110b49.jpg"
+        },
+        "game & Watch": {
+            "console": "Game & Watch",
+            "release": "1980",
+            "origin": "Japan",
+            "sold": "???",
+            "games": "60",
+            "price": "1350",
+            "img": "https://i.pinimg.com/564x/c9/8b/28/c98b289dcb856c7e1482dcde8ba4987e.jpg"
+        },
+        "game boy": {
+            "console": "Game Boy",
+            "release": "1989",
+            "origin": "Japan",
+            "sold": "118690000",
+            "games": "1046",
+            "price": "910",
+            "img": "https://i.pinimg.com/564x/f6/71/21/f671214980a5381688635061b6e78e6e.jpg"
+        }
+    }
+}

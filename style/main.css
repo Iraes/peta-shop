@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* Цвет таблицы */
+/* Цвет граней */
+/* Цвет элементов заголовка */
+/* Цвет таблицы */
+/* Цвет граней */
+/* Цвет элементов заголовка */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: #fff;
+  color: #212529;
+}
+
+section {
+  padding-top: 100px;
+}
+@media (max-width: 1024px) {
+  section {
+    padding-top: 58px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer {
+  background: #222222;
+}
+
+select {
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 7px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+textarea {
+  resize: none;
+}
+
+/*Меняем цвет плейсхолдера в инпуте Сафари и Хром*/
+input::-webkit-input-placeholder {
+  color: #cacaca;
+}
+
+/*Меняем цвет плейсхолдера в инпуте для Мозилы */
+input::-moz-placeholder {
+  color: #cacaca;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #cacaca;
+}
+
+textarea::-moz-placeholder {
+  color: #cacaca;
+}
+
+input:focus:not(.error),
+textarea:focus:not(.error) {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type=checkbox] {
+  margin: auto 5px;
+  width: 14px;
+  height: 14px;
+}
+input[type=checkbox]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 4px 0 dodgerBlue;
+}
+
+th[scope=col] {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1903px;
+}
+@media (max-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.for-mobile {
+  display: none;
+}
+
+.error {
+  border-color: #ff0000;
+  box-shadow: 0 0 10px 0 #ff0000;
+  color: #ff0000;
+}
+
+.title {
+  margin-left: 2.4px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58.5px;
+}
+@media (max-width: 1024px) {
+  .title {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+@media (max-width: 576px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+.btn--reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+.content {
+  padding: 20px;
+}
+.content__header-wrapper {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+.content__title {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+.content__btn {
+  display: block;
+  padding: 0.6em 1.25em;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+  background-color: inherit;
+}
+.content__btn:hover {
+  color: #fff;
+  background-color: #000000;
+}
+.content__info {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.list {
+  flex-wrap: wrap;
+}
+
+.form__label {
+  margin-right: 10px;
+  vertical-align: center;
+  cursor: pointer;
+}
+.form__checkbox {
+  margin-right: 0;
+  border: 1px solid #cacaca;
+  width: 14px;
+  height: 14px;
+}
+.form__checkbox_label {
+  margin-right: 12px;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.text__price, .text__country, .text__games, .text__sold {
+  display: block;
+}
+.text__price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.text__country, .text__games, .text__sold {
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
